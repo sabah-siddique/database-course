@@ -1,7 +1,3 @@
-# database-course
+# fifa
 
-This repo contains a collection of the projects I've done for a Database Design and Web Implementation course.
-
-Projects include:
-- 
-- Web + Python + SQLite application
+A multi-layered application using Python CGI and SQLite handling data about the best sport in the world, soccer.
