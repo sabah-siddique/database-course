@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>FIFA 2017-2018 Player Stats</title>
+        <link rel="icon" type="image/png" href="soccer-ball.png">
+        <link rel="stylesheet" type="text/css" href="fifa.css">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto|Spectral+SC" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <h1>FIFA 2016-2017 Player Stats</h1>
+            <p>A complete record of statistics for all FIFA players</p>
+        </header>
+        
+        <main>
+            <section class="description">
+                <p>&emsp;&emsp;&emsp;The data set I used for this assignment holds personal information and professional statistics for every FIFA player in the previous 2016-2017 season. It lists facts about each player, such as age and nationality, and a long list of performance statistics, including personal fitness and position-based categories. These stats are given numbers out of 100. </p>
+            </section>
+
+            <section class="form">
+                <article>
+                    <h2>Stats</h2>
+                    <p>Use the form below to view the stats on players from your favorite club!</p>
+                </article>
+                
+                <!-- Form -->
+                <form method="POST" action="fifa_cgi.py">
+                    
+                    <!-- Club name -->
+                    <label for="club">Select a club:</label>
+                    <select name="club" id="club">
+
+                        <optgroup label="Spanish Primera Divisi&oacute;n">
+                            <option>Athletic Club de Bilbao</option>
+                            <option>Athl&eacute;tico Madrid</option>
+                            <option>CD Legan&eacute;s</option>
+                            <option>Deportivo Alav&eacute;s</option>
+                            <option>FC Barcelona</option>
+                            <option>Getafe CF</option>
+                            <option>Girona CF</option>
+                            <option>Levante UD</option>
+                            <option>M&aacute;laga CF</option>
+                            <option>RC Celta de Vigo</option>
+                            <option>RC Deportivo de La Coru&ntilde;a</option>
+                            <option>RCD Espanyol</option>
+                            <option>Real Betis Balompi&eacute;</option>
+                            <option>Real Madrid CF</option>
+                            <option>Real Sociedad</option>
+                            <option>SD Eibar</option>
+                            <option>Sevilla FC</option>
+                            <option>UD Las Palmas</option>
+                            <option>Valencia CF</option>
+                            <option>Villarreal CF</option>
+                        </optgroup>
+                        <optgroup label="English Premier League">
+                            <option>Arsenal</option>
+                            <option>Aston Villa</option>
+                            <option>Blackburn Rovers</option>
+                            <option>Bolton Wanderers</option>
+                            <option>Chelsea</option>
+                            <option>Everton</option>
+                            <option>Fulham</option>
+                            <option>Leeds United</option>
+                            <option>Leicester City</option>
+                            <option>Manchester City</option>
+                            <option>Manchester United</option>
+                            <option>Middlesbrough</option>
+                            <option>Newcastle United</option>
+                            <option>Southampton</option>
+                            <option>Stoke City</option>
+                            <option>Sunderland</option>
+                            <option>Tottenham Hotspur</option>
+                            <option>West Bromwich Albion</option>
+                            <option>West Ham United</option>
+                        </optgroup>
+                        <optgroup label="Italian Serie A">
+                            <option>Atalanta</option>
+                            <option>Benevento Calcio</option>
+                            <option>Bologna</option>
+                            <option>Cagliari</option>
+                            <option>Chievo Verona</option>
+                            <option>Crotone</option>
+                            <option>Ferrera (SPAL)</option>
+                            <option>Fiorentina</option>
+                            <option>Genoa</option>
+                            <option>Hellas Verona</option>
+                            <option>Inter</option>
+                            <option>Juventus</option>
+                            <option>Lazio</option>
+                            <option>Milan</option>
+                            <option>Napoli</option>
+                            <option>Roma</option>
+                            <option>Sampdoria</option>
+                            <option>Sassuolo</option>
+                            <option>Torino</option>
+                            <option>Udinese</option>
+                        </optgroup>
+                    </select>
+                    <br><br>
+                    
+                    <!-- Quantity -->
+                    <label for="quantity">Select a number of players:</label>
+                    <select name="quantity" id="quantity">
+                        <option>5</option>
+                        <option>10</option>
+                        <option>15</option>
+                        <option>20</option>
+                    </select>
+                    <br><br>
+
+                    <!-- Sorting options -->
+                    <label for="sorting">How would you like the results sorted?</label>
+                    <select name="sorting" id="sorting">
+                        <option value="name">Name</option>
+                        <option value="age">Age</option>
+                        <option value="nationality">Nationality</option>
+                    </select>
+
+                    <br><br>
+                    <input type="submit" value="Submit">
+                    <input type="reset" value="Reset values">
+                </form>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; Sabah Siddique 2018</p>
+        </footer>
+    </body>
+</html>
